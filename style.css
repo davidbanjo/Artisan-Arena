@@ -6,10 +6,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    /* border: 1px solid black; */
+  
+    border-bottom: 1px solid lightblue;
+    border-radius: 20px;
+    z-index: 100000 !important;
 }
 ul {
     /* border: 1px solid black; */
@@ -48,13 +51,31 @@ h1 {
     display: flex;
     list-style: none;
 }
+.aa_header-hero-cta-row{
+    /* border: 1px solid black; */
+    gap: 20px;
+}
 .primaryBtn {
     width: 150px;
     height: 50px;
     border-radius: 15px;
     border: none;
     color: white;
-    background-color: #0352f5;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0354f5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0354f5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+}
+.secondaryBtn {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #0354f5;
+    background: transparent;
+    color: #0354f5;
     font-size: 18px;
     cursor: pointer;
     transition: .5s;
@@ -76,6 +97,7 @@ h1 {
     place-items: center;
     height: 100vh;
     /* border: 1px solid black; */
+    padding-top: 74px;
 }
 .aa_header-container-col {
     display: flex;
@@ -104,6 +126,16 @@ h1 {
 .d-flex {
     display: flex;
 }
+.artisanName {
+    background-color: #f3ec78;
+    background-image: linear-gradient(to right, #0354f5, #00d2ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 4.5rem;
+}
 #hcg-slider-1 .hcg-slide-container {
 	width: 100%;
 	height: 100%;
@@ -120,15 +152,16 @@ h1 {
     height: 100%;
 }
 .hcg-slides {
+    z-index: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
 	display: none;
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
-	/* border: solid 1px #a0a0a0; */
+	border: solid 1px #a0a0a0;
+    border-radius: 2.5rem;
 }
 .hcg-slides img {
 	max-width: 100%;
@@ -159,6 +192,19 @@ h1 {
 .fadeInLeft {
 	animation-name: fadeInLeft;
 }
+.display-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.h-100 {
+    height: 100% !important;
+    /* border: 1px solid black; */
+}
 @media (max-width: 1024px) {
     * {
         margin: 0 0.4rem;
@@ -170,6 +216,8 @@ h1 {
         /* border: 1px solid black; */
         margin: 0;
         padding: 0 10px;
+        background-color: white;
+        box-shadow: 0 0 15px lightblue;
     }
     .nav {
         display: none;
@@ -201,7 +249,8 @@ h1 {
         padding: 0px;
     }
     .mobileNavContainer {
-        position: absolute;
+        z-index: 10000000;
+        position: fixed;
         top: 0;
         right: 0;
         /* display: block; */
@@ -217,11 +266,14 @@ h1 {
         flex-direction: column;
         overflow: hidden;
     }
+    .aa_header-hero-cta-row {
+        justify-content: center;
+    }
     .mobileNavContainer li, .mobileNavContainer button,  .mobileNavContainer .aa_socials-container .aa_socials-container-row img {
         opacity: 0;
     }
     .primaryBtn {
-        margin: 0 auto;
+        margin: 0 0;
     }
     .closeMenuBtn {
         /* border: 1px solid;  */
@@ -243,7 +295,6 @@ h1 {
     .aa_nav-container-slide-in .aa_nav-container-text-focus-in {
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-        
     }
     .aa_nav-container-text-blur-out {
         -webkit-animation: text-blur-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -259,15 +310,22 @@ h1 {
         align-items: flex-end;
         justify-content: center;
     }
+    .aa_header-container {
+        padding-top: 150px;
+    }
     .aa_header-container-col {
         flex-direction: column;
+        gap: 50px;
     }
     .aa_header-container-col-row {
         width: 100%;
     }
     .aa_header-hero-title {
-        font-size: 3rem;
+        font-size: 3.4rem;
         text-align: center;
+    }
+    .artisanName {
+        font-size: 3.4rem;
     }
     .aa_header-hero-description {
         text-align: justify;
@@ -333,3 +391,6 @@ h1 {
 @media (max-width: 1920px) {
     
 }
+
+
+  

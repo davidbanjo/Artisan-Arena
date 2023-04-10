@@ -31,31 +31,31 @@ closeMenuBtn.onclick = () => {
     //If you want to add more images, add the link name and URL image URL in the array list below.
         const images_list = [
     {
-        "url": "https://www.html-code-generator.com/images/slider/1.png",
+        "url": "./img/carpenter.jpg",
         "alt": "",
         "name": "Artisan",
         "link": ""
     },
     {
-        "url": "https://www.html-code-generator.com/images/slider/2.png",
+        "url": "./img/barber.jpg",
         "alt": "",
         "name": "Barber",
         "link": ""
     },
     {
-        "url": "https://www.html-code-generator.com/images/slider/3.png",
+        "url": "./img/artist.png",
         "alt": "",
         "name": "image 3",
         "link": ""
     },
     {
-        "url": "https://www.html-code-generator.com/images/slider/4.png",
+        "url": "./img/potter.jpg",
         "alt": "",
         "name": "image 4",
         "link": ""
     },
     {
-        "url": "https://www.html-code-generator.com/images/slider/5.png",
+        "url": "./img/caterer.jpg",
         "alt": "",
         "name": "image 5",
         "link": ""
@@ -93,7 +93,6 @@ closeMenuBtn.onclick = () => {
                 slide_index = images.length-1;
             }
             for (let i = 0; i < images.length; i++) {
-                artisanName.textContent = images_list[i].name
                 images[i].style.display = "none";
                 if (i == slide_index) {
                     images[i].style.display = "flex";
