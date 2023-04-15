@@ -559,6 +559,9 @@ footer {
     .mockupBanner {
         width: 100%;
     }
+    .display-none {
+        display: none;
+    }
     footer {
         box-sizing: border-box;
         height: max-content;
