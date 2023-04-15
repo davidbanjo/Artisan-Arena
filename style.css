@@ -2,6 +2,9 @@
     margin: 0 3rem;
     font-family: 'Nunito', sans-serif;
 }
+body {
+    /* border: 1px solid black; */
+}
 nav {
     display: flex;
     justify-content: center;
@@ -9,7 +12,7 @@ nav {
     position: fixed;
     left: 0;
     right: 0;
-  
+    background-color: white;
     border-bottom: 1px solid lightblue;
     border-radius: 20px;
     z-index: 100000 !important;
@@ -107,6 +110,7 @@ h1 {
 } */
 .aa_header-hero-title {
     font-size: 4.5rem;
+    /* line-height: 6rem; */
 }
 .w-100 {
     width: 100%;
@@ -204,6 +208,151 @@ h1 {
 .h-100 {
     height: 100% !important;
     /* border: 1px solid black; */
+}
+.aa_section-container-row {
+    gap: 20px;
+}
+.aa_section-container-col {
+    /* border: 1px solid black; */
+}
+.mockupContainer {
+    /* border: 1px solid black; */
+    position: relative;
+}
+.aa_image-mockup {
+    width: 50rem;
+}
+.aa_mockup-shadow {
+    position: absolute;
+    filter: blur(10px);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-top: -10px;
+}
+.aa_section-title-light{
+    font-weight: 100;
+}
+.aa_section-title {
+    font-size: 3rem;
+}
+.pos-relative {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right !important;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.aa_lottie {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 250px;
+    opacity: 0.7;
+    /* border: 1px solid black; */
+}
+.aa_section-about-app-container-row{
+    /* height: 60rem; */
+    /* border: 1px solid black; */
+}
+.aa_section-container-col {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.aa_coming-soon-btn {
+    width: 250px;
+    cursor: not-allowed;
+}
+.aa_section-coming-soon-btns{
+    /* justify-content: flex-start; */
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+.aa_header-fake-user-avatar {
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow:  0 0 8px 0 grey;
+    margin-right: -10px;
+}
+.aa_section-container-col-earn-money-details {
+    flex-direction: row;
+}
+.aa_section-container-col-title {
+    text-align: center;
+    font-size: 3rem;
+}
+.aa_section-container-request-artisan {
+    flex-direction: column;
+    gap: 50px;
+}
+.aa_section-container-col-request-arisan-banner-img {
+    border-radius: 50px; 
+    box-shadow: 0 3px 8px 0 rgb(197, 197, 197);
+}
+.featuresSection {
+    flex-direction: column;
+    /* gap: 60px; */
+}
+.aa_section-container-col-description {
+    text-align: center;
+    width: 50%;
+}
+.aa_section-container-col-features-img-container {
+    width: 700px;
+    height: 150px;
+    /* border: 1px solid black; */
+    border-radius: 100px;
+    box-shadow: 0 0 10px 0 lightblue;
+}
+.aa_section-container-col-features-img-container-buy-airtime {
+    background-image: url("./img/buyairtime.png");
+    background-position: center;
+    background-size: cover;
+}
+.aa_section-container-col-features-img-container-save {
+    background-image: url("./img/savemoney.png");
+    background-position: center;
+    background-size: cover;
+}
+.aa_section-container-col-features-img-container-dstv-bills {
+    background-image: url("./img/dstvbills.png");
+    background-position: center;
+    background-size: cover;
+}
+.aa_section-container-col-features-img {
+    width: 700px;
+}
+.aa_section-container-col-features-img-container-title {
+    font-size: 2.5rem;
+    color: white;
+}
+/* footer */
+footer {
+    background-color: #0352f5;
+    height: 15rem;
+    border-radius: 20px;
+    color: white;
+}
+.aa_footer-logo-container {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.mockupBanner {
+    width: 1400px;
+    /* border: 1px solid black; */
+}
+.aa_header-fake-user-avatar-container p {
+    margin: 0 25px !important;
 }
 @media (max-width: 1024px) {
     * {
@@ -312,6 +461,7 @@ h1 {
     }
     .aa_header-container {
         padding-top: 150px;
+        height: max-content;
     }
     .aa_header-container-col {
         flex-direction: column;
@@ -329,6 +479,91 @@ h1 {
     }
     .aa_header-hero-description {
         text-align: justify;
+    }
+    .aa_section-container-col-request-arisan-banner-img {
+        width: 100%;
+    }
+    .aa_header-fake-user-avatar-container-row {
+        /* margin-right: 30px !important; */
+    }
+    .mockupBanner {
+        width: 200px;
+    }
+    .aa_section-about-app-container-row {
+        flex-direction: column-reverse;
+    }
+    .aa_image-mockup {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        width: 340px;
+    }
+    .mockupContainerDetail {
+        padding-top: 70px;
+    }
+    .aa_lottie {
+        display: none;
+    }
+    .mockupContainer {
+        width: 100% !important;
+    }
+    .aa_header-hero-title {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .aa_header-fake-user-avatar-container p {
+        margin-right: 0 !important;
+    }
+    .aa_coming-soon-btn {
+        width: 100%;
+    }
+    .aa_section-coming-soon-btns {
+        gap: 10px;
+    }
+    .aa_section-container-col-earn-money-details p {
+        margin: 0;
+        text-align: justify;
+    }
+    .aa_section-container-col-earn-money-details {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .aa_section-container-col-earn-money-img {
+        width: 100%;
+    }
+    .aa_section-container-col-title {
+        padding-bottom: 50px;
+    }
+    .aa_section-container-request-artisan {
+        gap: 30px;
+    }
+    .request-an-artisan-title {
+        padding-bottom: 20px;
+    }
+    .aa_section-container-col-request-artisan-description {
+        text-align: justify;
+    }
+    .features-artisan-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .aa_section-container-col-features-img-container {
+        width: 100%;
+    }
+    .features-artisan-col-rev {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .featuresSection {
+        gap: 40px !important;
+    }
+    .mockupBanner {
+        width: 100%;
+    }
+    footer {
+        height: max-content;
+    }
+    .featuresTitle {
+        padding-bottom: 0px;
     }
 }   
 @-webkit-keyframes text-focus-in {
