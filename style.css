@@ -560,7 +560,13 @@ footer {
         width: 100%;
     }
     footer {
+        box-sizing: border-box;
         height: max-content;
+        padding: 30px;
+    }
+    .aa_footer-logo-container {
+        width: 100px;
+        height: 100px;
     }
     .featuresTitle {
         padding-bottom: 0px;
