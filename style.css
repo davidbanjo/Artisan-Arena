@@ -36,6 +36,9 @@ li:hover {
     border-bottom: 2px solid #0352f5;
     color: #0352f5;
 }
+b {
+    margin: 0;
+}
 .logo {
     display: flex;
     gap: 1rem;
@@ -354,6 +357,110 @@ footer {
 .aa_header-fake-user-avatar-container p {
     margin: 0 25px !important;
 }
+.aa_section-container-row-faq {
+    gap: 60px;
+}
+/* FAQ */
+.faq-heading {
+  font-weight: 400;
+  font-size: 19px;
+   /* -webkit-transition: text-indent 0.2s; */
+  /* text-indent: 20px; */
+  color: #333;
+  padding: 20px;
+}
+
+.faq-text {
+  font-weight: 400;
+  color: #919191;
+  width: 95%;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.faq {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+.faq label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 56px;
+  padding-top:1px;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #E1E1E1;
+  border: 1px solid lightgray;
+}
+
+.faq input[type="checkbox"] {
+  display: none;
+}
+
+.faq .faq-arrow {
+  width: 5px;
+  height: 5px;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-right: 2px solid rgba(0, 0, 0, 0.33);
+  float: right;
+  position: relative;
+  top: -35px;
+  right: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+ .faq input[type="checkbox"]:checked + label > .faq-arrow {
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+ .faq input[type="checkbox"]:checked + label > .faq-text {
+    display: flex;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+ .faq input[type="checkbox"]:checked + label {
+  display: block;
+  background: rgba(255,255,255,255) !important;
+  color: #4f7351;
+  height: max-content;
+  transition: height 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ .faq input[type='checkbox']:not(:checked) + label {
+  display: block;
+  transition: height 0.8s;
+  height: max-content;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.faqLottie {
+    width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.aa-mobile-faq-lottie {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     * {
         margin: 0 0.4rem;
@@ -573,6 +680,18 @@ footer {
     }
     .featuresTitle {
         padding-bottom: 0px;
+    }
+    .aa_section-container-row-faq{
+        flex-direction: column;
+    }
+    .aa-mobile-faq-lottie {
+        display: flex;
+    }
+    .aa-desktop-faq-lottie {
+        display: none;
+    }
+    .faq label {
+        height: 180px;
     }
 }   
 @-webkit-keyframes text-focus-in {
