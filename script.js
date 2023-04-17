@@ -31,7 +31,7 @@ closeMenuBtn.onclick = () => {
     //If you want to add more images, add the link name and URL image URL in the array list below.
         const images_list = [
     {
-        "url": "./img/carpenter.jpg",
+        "url": "./img/constructionworkers.jpg",
         "alt": "",
         "name": "Artisan",
         "link": ""
