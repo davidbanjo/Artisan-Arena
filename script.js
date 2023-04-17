@@ -37,13 +37,13 @@ closeMenuBtn.onclick = () => {
         "link": ""
     },
     {
-        "url": "./img/barber.jpg",
+        "url": "./img/candeler.jpg",
         "alt": "",
         "name": "Barber",
         "link": ""
     },
     {
-        "url": "./img/artist.png",
+        "url": "./img/artist.jpg",
         "alt": "",
         "name": "image 3",
         "link": ""
@@ -55,7 +55,7 @@ closeMenuBtn.onclick = () => {
         "link": ""
     },
     {
-        "url": "./img/caterer.jpg",
+        "url": "./img/chef.jpg",
         "alt": "",
         "name": "image 5",
         "link": ""
