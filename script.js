@@ -31,33 +31,33 @@ closeMenuBtn.onclick = () => {
     //If you want to add more images, add the link name and URL image URL in the array list below.
         const images_list = [
     {
-        "url": "./img/constructionworkers.jpg",
+        "url": "./img/shoemaker.jpg",
         "alt": "",
-        "name": "Artisan",
+        "name": "shoemaker",
         "link": ""
     },
     {
-        "url": "./img/candeler.jpg",
+        "url": "./img/tailor.jpg",
         "alt": "",
-        "name": "Barber",
+        "name": "tailor",
         "link": ""
     },
     {
-        "url": "./img/artist.jpg",
+        "url": "./img/barber.jpg",
         "alt": "",
-        "name": "image 3",
+        "name": "barber",
         "link": ""
     },
     {
-        "url": "./img/potter.jpg",
+        "url": "./img/bricklayer.jpg",
         "alt": "",
-        "name": "image 4",
+        "name": "bricklayer",
         "link": ""
     },
     {
-        "url": "./img/chef.jpg",
+        "url": "./img/vulcanizer.jpg",
         "alt": "",
-        "name": "image 5",
+        "name": "vulcanizer",
         "link": ""
     }
         ];
